@@ -7,6 +7,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using System.Web.Http.Description;
 using NorthwindApp.Data;
 using NorthwindApp.Models;
@@ -20,6 +21,7 @@ namespace NorthwindApp.Controllers
         private NorthwindContainer db = new NorthwindContainer();
 
         // GET: api/Products
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
         [Route("GetAll")] // Added because these are custom functions now
         [HttpGet] // Added because these are custom functions now
         public IEnumerable<ProductDTO> GetProducts()
