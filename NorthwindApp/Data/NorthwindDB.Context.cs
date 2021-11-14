@@ -13,10 +13,10 @@ namespace NorthwindApp.Data
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class NorthwindContainer : DbContext
+    public partial class NorthwindEntities : DbContext
     {
-        public NorthwindContainer()
-            : base("name=NorthwindContainer")
+        public NorthwindEntities()
+            : base("name=NorthwindEntities")
         {
         }
     

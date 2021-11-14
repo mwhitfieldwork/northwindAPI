@@ -18,7 +18,7 @@ namespace NorthwindApp.Controllers
 
     public class ProductsController : ApiController
     {
-        private NorthwindContainer db = new NorthwindContainer();
+        private NorthwindEntities db = new NorthwindEntities();
 
         // GET: api/Products
         [EnableCors(origins: "*", headers: "*", methods: "*")]
