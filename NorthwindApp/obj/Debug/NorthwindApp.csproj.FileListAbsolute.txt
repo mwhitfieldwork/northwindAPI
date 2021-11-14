@@ -157,4 +157,3 @@ C:\Projects\northwindAPI\NorthwindApp\obj\Debug\NorthwindApp.pdb
 C:\Projects\northwindAPI\NorthwindApp\bin\System.Web.Cors.dll
 C:\Projects\northwindAPI\NorthwindApp\bin\System.Web.Http.Cors.dll
 C:\Projects\northwindAPI\NorthwindApp\bin\System.Web.Http.Cors.xml
-C:\Projects\northwindAPI\NorthwindApp\obj\Debug\NorthwindApp.csproj.CopyComplete

@@ -50,3 +50,6 @@ C:\Projects\northwindAPI\NorthwindApp\obj\Release\NorthwindApp.csproj.AssemblyRe
 C:\Projects\northwindAPI\NorthwindApp\obj\Release\NorthwindApp.csproj.CoreCompileInputs.cache
 C:\Projects\northwindAPI\NorthwindApp\obj\Release\NorthwindApp.dll
 C:\Projects\northwindAPI\NorthwindApp\obj\Release\NorthwindApp.pdb
+C:\Projects\northwindAPI\NorthwindApp\bin\System.Web.Cors.dll
+C:\Projects\northwindAPI\NorthwindApp\bin\System.Web.Http.Cors.dll
+C:\Projects\northwindAPI\NorthwindApp\bin\System.Web.Http.Cors.xml
