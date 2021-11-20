@@ -27,6 +27,7 @@
         <AssociationConnector Association="Northwind.FK_Territories_Region" />
         <AssociationConnector Association="Northwind.CustomerCustomerDemo" />
         <AssociationConnector Association="Northwind.EmployeeTerritories" />
+        <EntityTypeShape EntityType="Northwind.User" Width="1.5" PointX="0.75" PointY="6.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

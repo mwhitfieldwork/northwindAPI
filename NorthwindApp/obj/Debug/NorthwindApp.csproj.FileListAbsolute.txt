@@ -102,6 +102,8 @@ C:\Practice\BackEnd\NorthwindV2\NorthwindApp\NorthwindApp\obj\Debug\NorthwindApp
 C:\Practice\BackEnd\NorthwindV2\NorthwindApp\NorthwindApp\obj\Debug\NorthwindApp.csproj.CoreCompileInputs.cache
 C:\Practice\BackEnd\NorthwindV2\NorthwindApp\NorthwindApp\obj\Debug\NorthwindApp.dll
 C:\Practice\BackEnd\NorthwindV2\NorthwindApp\NorthwindApp\obj\Debug\NorthwindApp.pdb
+C:\Projects\northwindAPI\NorthwindApp\obj\Debug\NorthwindApp.csproj.AssemblyReference.cache
+C:\Projects\northwindAPI\NorthwindApp\obj\Debug\NorthwindApp.csproj.CoreCompileInputs.cache
 C:\Projects\northwindAPI\NorthwindApp\bin\ApplicationInsights.config
 C:\Projects\northwindAPI\NorthwindApp\bin\NorthwindApp.dll.config
 C:\Projects\northwindAPI\NorthwindApp\bin\NorthwindApp.dll
@@ -120,7 +122,9 @@ C:\Projects\northwindAPI\NorthwindApp\bin\Microsoft.CodeDom.Providers.DotNetComp
 C:\Projects\northwindAPI\NorthwindApp\bin\Microsoft.Web.Infrastructure.dll
 C:\Projects\northwindAPI\NorthwindApp\bin\Newtonsoft.Json.dll
 C:\Projects\northwindAPI\NorthwindApp\bin\System.Net.Http.Formatting.dll
+C:\Projects\northwindAPI\NorthwindApp\bin\System.Web.Cors.dll
 C:\Projects\northwindAPI\NorthwindApp\bin\System.Web.Helpers.dll
+C:\Projects\northwindAPI\NorthwindApp\bin\System.Web.Http.Cors.dll
 C:\Projects\northwindAPI\NorthwindApp\bin\System.Web.Http.dll
 C:\Projects\northwindAPI\NorthwindApp\bin\System.Web.Http.WebHost.dll
 C:\Projects\northwindAPI\NorthwindApp\bin\System.Web.Mvc.dll
@@ -135,6 +139,7 @@ C:\Projects\northwindAPI\NorthwindApp\bin\EntityFramework.SqlServer.xml
 C:\Projects\northwindAPI\NorthwindApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Projects\northwindAPI\NorthwindApp\bin\System.Net.Http.Formatting.xml
 C:\Projects\northwindAPI\NorthwindApp\bin\System.Web.Http.xml
+C:\Projects\northwindAPI\NorthwindApp\bin\System.Web.Http.Cors.xml
 C:\Projects\northwindAPI\NorthwindApp\bin\System.Web.Http.WebHost.xml
 C:\Projects\northwindAPI\NorthwindApp\bin\System.Web.Helpers.xml
 C:\Projects\northwindAPI\NorthwindApp\bin\System.Web.Mvc.xml
@@ -150,11 +155,5 @@ C:\Projects\northwindAPI\NorthwindApp\bin\Microsoft.AI.DependencyCollector.xml
 C:\Projects\northwindAPI\NorthwindApp\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\Projects\northwindAPI\NorthwindApp\bin\Microsoft.AI.WindowsServer.xml
 C:\Projects\northwindAPI\NorthwindApp\bin\Microsoft.AI.Web.xml
-C:\Projects\northwindAPI\NorthwindApp\obj\Debug\NorthwindApp.csproj.AssemblyReference.cache
-C:\Projects\northwindAPI\NorthwindApp\obj\Debug\NorthwindApp.csproj.CoreCompileInputs.cache
 C:\Projects\northwindAPI\NorthwindApp\obj\Debug\NorthwindApp.dll
 C:\Projects\northwindAPI\NorthwindApp\obj\Debug\NorthwindApp.pdb
-C:\Projects\northwindAPI\NorthwindApp\bin\System.Web.Cors.dll
-C:\Projects\northwindAPI\NorthwindApp\bin\System.Web.Http.Cors.dll
-C:\Projects\northwindAPI\NorthwindApp\bin\System.Web.Http.Cors.xml
-C:\Projects\northwindAPI\NorthwindApp\obj\Debug\NorthwindApp.csproj.CopyComplete
