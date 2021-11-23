@@ -7,7 +7,7 @@ using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using System.Web.Mvc;
 using NorthwindApp.Data;
-
+using System.Web.Http.Cors;
 
 namespace NorthwindApp.Controllers
 {
@@ -18,6 +18,7 @@ namespace NorthwindApp.Controllers
         {
             return View();
         }
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
         [HttpPost]
         public ActionResult Authorize(NorthwindApp.Models.UserDTO userModel)
         {
