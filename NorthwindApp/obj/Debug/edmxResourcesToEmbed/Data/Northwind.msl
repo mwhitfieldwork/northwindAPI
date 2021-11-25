@@ -169,5 +169,14 @@
         <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
       </EndProperty>
     </AssociationSetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="Northwind.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="Passowrd" ColumnName="Passowrd" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="PKID" ColumnName="PKID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

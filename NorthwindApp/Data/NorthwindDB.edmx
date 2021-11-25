@@ -161,6 +161,14 @@
           <Property Name="TerritoryDescription" Type="nchar" MaxLength="50" Nullable="false" />
           <Property Name="RegionID" Type="int" Nullable="false" />
         </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="PKID" />
+          </Key>
+          <Property Name="PKID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserName" Type="varchar" MaxLength="50" />
+          <Property Name="Passowrd" Type="varchar" MaxLength="100" />
+        </EntityType>
         <Association Name="FK_CustomerCustomerDemo">
           <End Role="CustomerDemographics" Type="Self.CustomerDemographics" Multiplicity="1" />
           <End Role="CustomerCustomerDemo" Type="Self.CustomerCustomerDemo" Multiplicity="*" />
@@ -331,6 +339,7 @@
           <EntitySet Name="Shippers" EntityType="Self.Shippers" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Suppliers" EntityType="Self.Suppliers" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Territories" EntityType="Self.Territories" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK_CustomerCustomerDemo" Association="Self.FK_CustomerCustomerDemo">
             <End Role="CustomerDemographics" EntitySet="CustomerDemographics" />
             <End Role="CustomerCustomerDemo" EntitySet="CustomerCustomerDemo" />
@@ -388,7 +397,69 @@
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
+<<<<<<< HEAD:NorthwindApp/Data/NorthwindDB.edmx
       <Schema Namespace="NorthwindModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+=======
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Northwind" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="NorthwindContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Categories" EntityType="Northwind.Category" />
+          <EntitySet Name="CustomerDemographics" EntityType="Northwind.CustomerDemographic" />
+          <EntitySet Name="Customers" EntityType="Northwind.Customer" />
+          <EntitySet Name="Employees" EntityType="Northwind.Employee" />
+          <EntitySet Name="Order_Details" EntityType="Northwind.Order_Detail" />
+          <EntitySet Name="Orders" EntityType="Northwind.Order" />
+          <EntitySet Name="Products" EntityType="Northwind.Product" />
+          <EntitySet Name="Regions" EntityType="Northwind.Region" />
+          <EntitySet Name="Shippers" EntityType="Northwind.Shipper" />
+          <EntitySet Name="Suppliers" EntityType="Northwind.Supplier" />
+          <EntitySet Name="Territories" EntityType="Northwind.Territory" />
+          <AssociationSet Name="FK_Products_Categories" Association="Northwind.FK_Products_Categories">
+            <End Role="Category" EntitySet="Categories" />
+            <End Role="Product" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Orders_Customers" Association="Northwind.FK_Orders_Customers">
+            <End Role="Customer" EntitySet="Customers" />
+            <End Role="Order" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Employees_Employees" Association="Northwind.FK_Employees_Employees">
+            <End Role="Employee" EntitySet="Employees" />
+            <End Role="Employee1" EntitySet="Employees" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Orders_Employees" Association="Northwind.FK_Orders_Employees">
+            <End Role="Employee" EntitySet="Employees" />
+            <End Role="Order" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Order_Details_Orders" Association="Northwind.FK_Order_Details_Orders">
+            <End Role="Order" EntitySet="Orders" />
+            <End Role="Order_Detail" EntitySet="Order_Details" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Order_Details_Products" Association="Northwind.FK_Order_Details_Products">
+            <End Role="Product" EntitySet="Products" />
+            <End Role="Order_Detail" EntitySet="Order_Details" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Orders_Shippers" Association="Northwind.FK_Orders_Shippers">
+            <End Role="Shipper" EntitySet="Shippers" />
+            <End Role="Order" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Products_Suppliers" Association="Northwind.FK_Products_Suppliers">
+            <End Role="Supplier" EntitySet="Suppliers" />
+            <End Role="Product" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Territories_Region" Association="Northwind.FK_Territories_Region">
+            <End Role="Region" EntitySet="Regions" />
+            <End Role="Territory" EntitySet="Territories" />
+          </AssociationSet>
+          <AssociationSet Name="CustomerCustomerDemo" Association="Northwind.CustomerCustomerDemo">
+            <End Role="CustomerDemographic" EntitySet="CustomerDemographics" />
+            <End Role="Customer" EntitySet="Customers" />
+          </AssociationSet>
+          <AssociationSet Name="EmployeeTerritories" Association="Northwind.EmployeeTerritories">
+            <End Role="Employee" EntitySet="Employees" />
+            <End Role="Territory" EntitySet="Territories" />
+          </AssociationSet>
+          <EntitySet Name="Users" EntityType="Northwind.User" />
+        </EntityContainer>
+>>>>>>> feature-105:NorthwindApp/Data/Northwind.edmx
         <EntityType Name="Category">
           <Key>
             <PropertyRef Name="CategoryID" />
@@ -667,6 +738,7 @@
           <End Role="Employees" Type="Self.Employee" Multiplicity="*" />
           <End Role="Territories" Type="Self.Territory" Multiplicity="*" />
         </Association>
+<<<<<<< HEAD:NorthwindApp/Data/NorthwindDB.edmx
         <EntityContainer Name="NorthwindEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Categories" EntityType="Self.Category" />
           <EntitySet Name="CustomerDemographics" EntityType="Self.CustomerDemographic" />
@@ -724,6 +796,16 @@
             <End Role="Territories" EntitySet="Territories" />
           </AssociationSet>
         </EntityContainer>
+=======
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="PKID" />
+          </Key>
+          <Property Name="PKID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Passowrd" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+>>>>>>> feature-105:NorthwindApp/Data/Northwind.edmx
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -896,6 +978,15 @@
               <ScalarProperty Name="TerritoryID" ColumnName="TerritoryID" />
             </EndProperty>
           </AssociationSetMapping>
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="Northwind.User">
+              <MappingFragment StoreEntitySet="User">
+                <ScalarProperty Name="Passowrd" ColumnName="Passowrd" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="PKID" ColumnName="PKID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

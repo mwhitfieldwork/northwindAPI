@@ -24,6 +24,7 @@ namespace NorthwindApp.Controllers
         [EnableCors(origins: "*", headers: "*", methods: "*")]
         [Route("GetAll")] // Added because these are custom functions now
         [HttpGet] // Added because these are custom functions now
+        [Authorize]
         public IEnumerable<ProductDTO> GetProducts()
         {
             var Products = (from e in db.Products
