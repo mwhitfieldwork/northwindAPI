@@ -12,7 +12,7 @@ namespace NorthwindApp.Controllers
 {
     public class LoginAPIController : ApiController
     {
-        NorthwindContainer db = new NorthwindContainer();
+        NorthwindEntities1 db = new NorthwindEntities1();
 
         [Route("Login")]
         [HttpPost]

@@ -18,13 +18,13 @@ namespace NorthwindApp.Controllers
 
     public class ProductsController : ApiController
     {
-        private NorthwindEntities db = new NorthwindEntities();
+        private NorthwindEntities1 db = new NorthwindEntities1();
 
         // GET: api/Products
         [EnableCors(origins: "*", headers: "*", methods: "*")]
         [Route("GetAll")] // Added because these are custom functions now
         [HttpGet] // Added because these are custom functions now
-        [Authorize]
+   
         public IEnumerable<ProductDTO> GetProducts()
         {
             var Products = (from e in db.Products

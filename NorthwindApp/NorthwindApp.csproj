@@ -171,55 +171,55 @@
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Data\Category.cs">
-      <DependentUpon>NorthwindDB.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Data\Customer.cs">
-      <DependentUpon>NorthwindDB.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Data\CustomerDemographic.cs">
-      <DependentUpon>NorthwindDB.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Data\Employee.cs">
-      <DependentUpon>NorthwindDB.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Data\NorthwindDB.Context.cs">
+    <Compile Include="Data\Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>NorthwindDB.Context.tt</DependentUpon>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Data\NorthwindDB.cs">
+    <Compile Include="Data\Model1.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>NorthwindDB.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Data\NorthwindDB.Designer.cs">
+    <Compile Include="Data\Model1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>NorthwindDB.edmx</DependentUpon>
+      <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
     <Compile Include="Data\Order.cs">
-      <DependentUpon>NorthwindDB.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Data\Order_Detail.cs">
-      <DependentUpon>NorthwindDB.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Data\Product.cs">
-      <DependentUpon>NorthwindDB.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Data\Region.cs">
-      <DependentUpon>NorthwindDB.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Data\Shipper.cs">
-      <DependentUpon>NorthwindDB.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Data\Supplier.cs">
-      <DependentUpon>NorthwindDB.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Data\Territory.cs">
-      <DependentUpon>NorthwindDB.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Data\User.cs">
-      <DependentUpon>Northwind.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -233,15 +233,15 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Data\NorthwindDB.Context.tt">
+    <Content Include="Data\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>NorthwindDB.edmx</DependentUpon>
-      <LastGenOutput>NorthwindDB.Context.cs</LastGenOutput>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Data\NorthwindDB.tt">
+    <Content Include="Data\Model1.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>NorthwindDB.edmx</DependentUpon>
-      <LastGenOutput>NorthwindDB.cs</LastGenOutput>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -252,12 +252,12 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <EntityDeploy Include="Data\NorthwindDB.edmx">
+    <EntityDeploy Include="Data\Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>NorthwindDB.Designer.cs</LastGenOutput>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Data\NorthwindDB.edmx.diagram">
-      <DependentUpon>NorthwindDB.edmx</DependentUpon>
+    <Content Include="Data\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
     </Content>
     <None Include="Properties\PublishProfiles\IISProfile.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />

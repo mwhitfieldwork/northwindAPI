@@ -22,7 +22,7 @@ namespace NorthwindApp.Controllers
         [HttpPost]
         public ActionResult Authorize(NorthwindApp.Models.UserDTO userModel)
         {
-            using(NorthwindContainer db = new NorthwindContainer())
+            using(NorthwindEntities1 db = new NorthwindEntities1())
             {
                 var userDetails = db.Users.Where(x => x.UserName == userModel.UserName && x.Passowrd == userModel.Password).FirstOrDefault();
                 if(userDetails == null)
